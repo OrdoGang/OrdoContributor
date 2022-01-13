@@ -1,0 +1,50 @@
+monkey_category = {
+    anti_anime_propaganda = {
+
+        cost = 25
+        days_remove = 10
+        days_re_enable = 20
+
+        modifier = {
+            war_support_weekly_factor = 0.1
+            political_power_gain = 0.15
+        }
+
+        complete_effect = {
+            add_to_variable = { anprim_clique_influence = 10 }
+            subtract_from_variable = { banana_clique_influence = 8 }
+        }
+    }
+    mobilise_the_mori_brigade = {
+
+        cost = 25
+        days_remove = 10
+        days_re_enable = 20
+
+        modifier = {
+            war_support_weekly_factor = 0.1
+            political_power_gain = 0.15
+        }
+
+        complete_effect = {
+            add_to_variable = { banana_clique_influence = 10 }
+            subtract_from_variable = { anprim_clique_influence = 8 }
+        }
+    }
+    monkey_lets_go = {
+        complete_effect = {
+            load_focus_tree = jap_monkey_focus
+        }
+    }
+    reset_monkey = {
+        complete_effect = {
+            set_variable = { banana_clique_influence = 0 }
+            set_variable = { anprim_clique_influence = 0 }
+        }
+    }
+    great_monkey_debate = {
+        complete_effect = {
+            country_event = monkey.1
+        }
+    }
+}

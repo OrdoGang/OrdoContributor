@@ -1,0 +1,147 @@
+focus_tree = {
+    id = jap_monkey_focus
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = JAP
+        }
+    }
+
+    default = no
+
+    continuous_focus_position = { x = 50 y = 1000 }
+
+    focus = { #1
+        id = JAP_do_some_trolling
+        icon = BRG_the_spartan_phalanx
+        x = 3
+        y = -10
+        #relative_position_id = 
+
+        available = {
+        }
+        bypass = {
+        }
+
+        cost = 1
+        #prerequisite = {}
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            add_political_power = 100
+        }
+        ai_will_do = {
+        }
+    }
+        focus = { #2
+        id = JAP_do_more_trolling
+        icon = BRG_the_spartan_phalanx
+        x = 0
+        y = 1
+        relative_position_id = JAP_do_some_trolling
+
+        available = {
+        }
+        bypass = {
+        }
+
+        cost = 1
+        prerequisite = { focus = JAP_do_some_trolling }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            add_political_power = 100
+        }
+        ai_will_do = {
+        }
+    }
+     focus = { #3
+        id = JAP_create_anime
+        icon = BRG_the_spartan_phalanx
+        x = 0
+        y = 1
+        relative_position_id = JAP_do_more_trolling
+
+        available = {
+        }
+        bypass = {
+        }
+
+        cost = 2
+        prerequisite = { focus = JAP_do_more_trolling }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            add_political_power = 100
+            add_offsite_building = { type = arms_factory level = 1 }
+            country_event = monkey.0
+        }
+        ai_will_do = {
+        }
+    }
+     focus = { #4
+        id = JAP_export_anime
+        icon = BRG_the_spartan_phalanx
+        x = 2
+        y = 1
+        relative_position_id = JAP_create_anime
+
+        available = {
+        }
+        bypass = {
+        }
+
+        cost = 2
+        prerequisite = { focus = JAP_create_anime }
+        mutually_exclusive = { focus = JAP_ban_anime }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            add_political_power = 100
+            country_event = { id = monkey.0 }
+        }
+        ai_will_do = {
+        }
+    }
+         focus = { #5
+        id = JAP_ban_anime
+        icon = BRG_the_spartan_phalanx
+        x = -2
+        y = 1
+        relative_position_id = JAP_create_anime
+
+        available = {
+        }
+        bypass = {
+        }
+
+        cost = 2
+        prerequisite = { focus = JAP_create_anime }
+        mutually_exclusive = { focus = JAP_export_anime }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            add_political_power = 100
+        }
+        ai_will_do = {
+        }
+    }
+}

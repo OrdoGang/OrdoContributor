@@ -1,0 +1,55 @@
+define_text = {
+    name = Banana
+    text = {
+		trigger = {
+			AND = {
+				check_variable = { banana_clique_influence > 17 }
+			}
+		}
+		localization_key = banana_high_value
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { banana_clique_influence > 7.99 }
+			}
+		}
+		localization_key = banana_mid_value
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { banana_clique_influence < 8 }
+			}
+		}
+		localization_key = banana_low_value
+	}
+}
+
+define_text = {
+    name = Anprim
+    text = {
+		trigger = {
+			AND = {
+				check_variable = { anprim_clique_influence > 17 }
+			}
+		}
+		localization_key = anprim_high_value
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { anprim_clique_influence > 7.99 }
+			}
+		}
+		localization_key = anprim_mid_value
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { anprim_clique_influence < 8 }
+			}
+		}
+		localization_key = anprim_low_value
+	}
+}

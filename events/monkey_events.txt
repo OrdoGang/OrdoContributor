@@ -1,0 +1,76 @@
+###########################
+### MONKEY EVENTS (JAP) FOR ORDO ###
+###########################
+
+add_namespace = monkey
+
+country_event = {
+    id = monkey.0
+    title = monkey.0.t
+    desc = monkey.0.d
+    picture = GFX_BRA_event_60s_helicopter
+
+    is_triggered_only = yes
+
+    option = {
+        name = monkey.0.a
+        hidden_effect = {
+            add_to_variable = { banana_clique_influence = 10 }
+            subtract_from_variable = { anprim_clique_influence = 5 }
+        }
+    }
+}
+
+country_event = {
+    id = monkey.1
+    title = monkey.1.t
+    desc = monkey.1.d
+    picture = GFX_BRA_event_60s_helicopter
+
+    is_triggered_only = yes
+
+    option = {
+        name = monkey.1.a
+        country_event = {
+            id = monkey.2
+        }
+    }
+    option = {
+        name = monkey.1.b
+        country_event = {
+            id = monkey.3
+        }
+    }
+}
+
+country_event = {
+    id = monkey.2
+    title = monkey.2.t
+    desc = monkey.2.d
+    picture = GFX_BRA_event_60s_helicopter
+
+    is_triggered_only = yes
+
+    option = {
+        name = monkey.2.a
+        hidden_effect = {
+            add_to_variable = { banana_clique_influence = 10 }
+        }
+    }
+}
+
+country_event = {
+    id = monkey.3
+    title = monkey.3.t
+    desc = monkey.3.d
+    picture = GFX_BRA_event_60s_helicopter
+
+    is_triggered_only = yes
+
+    option = {
+        name = monkey.3.a
+        hidden_effect = {
+            add_to_variable = { anprim_clique_influence = 10 }
+        }
+    }
+}
