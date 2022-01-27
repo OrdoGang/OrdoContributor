@@ -1,5 +1,5 @@
 define_text = {
-    name = Banana
+    name = GetBanana
     text = {
 		trigger = {
 			AND = {
@@ -27,7 +27,7 @@ define_text = {
 }
 
 define_text = {
-    name = Anprim
+    name = GetAnprim
     text = {
 		trigger = {
 			AND = {

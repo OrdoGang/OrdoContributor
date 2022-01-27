@@ -1,13 +1,13 @@
 ﻿l_english:
 
- JAP_do_some_trolling:0 "Do Some Trolling"
- JAP_do_some_trolling_desc:0 "Glorious Emperor, we must troll!"
- JAP_do_more_trolling:0 "Do More Trolling"
- JAP_do_more_trolling_desc:0 "We must troll more."
+ JAP_do_some_trolling:0 "Promote the Weekly Shōnen Jump"
+ JAP_do_some_trolling_desc:0 "Pretty self-explanitory, in my opinion."
+ JAP_do_more_trolling:0 "Found the Anime Research Society"
+ JAP_do_more_trolling_desc:0 "Anime."
  JAP_create_anime:0 "Create Anime"
- JAP_create_anime_desc:0 "We will create anime."
+ JAP_create_anime_desc:0 "We will create anime. god i hope it works."
  JAP_export_anime:0 "Export Anime"
- JAP_export_anime_desc:0 "Time to show the world the glory that is Oreimo."
+ JAP_export_anime_desc:0 "Time to show the world the glory that is Anime."
  JAP_ban_anime:0 "Ban Anime"
  JAP_ban_anime_desc:0 " "Now, LORD our God, deliver us from his hand, so that all the kingdoms of the earth may know that you, LORD, are the only God." - Isaiah 37:20 "
 
@@ -33,7 +33,7 @@
  reset_monkey:0 "Resetting"
  great_monkey_debate:0 "MONKEY DEBATE"
  monkey_category:0 "I Love Mori Calliope"
- monkey_category_desc:0 "i love mori calliope. here are the values.\ncurrent banana influence is [?banana_clique_influence] ([Banana]).\ncurrent anprim influence is [?anprim_clique_influence] ([Anprim])."
+ monkey_category_desc:0 "i love mori calliope. here are the values.\ncurrent banana influence is [?banana_clique_influence] [GetBanana].\ncurrent anprim influence is [?anprim_clique_influence] [GetAnprim]."
  banana_high_value:0 "high"
  banana_mid_value:0 "middling"
  banana_low_value:0 "low"
